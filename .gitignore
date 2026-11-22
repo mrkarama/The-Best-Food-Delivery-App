@@ -1,0 +1,15 @@
+node_modules/
+vendor/
+.env
+.dart_tool/
+.android/
+.gradle/
+build/
+Pods/
+*.apk
+*.aab
+*.ipa
+*.img
+*.qcow2
+*.mp4
+*.mov

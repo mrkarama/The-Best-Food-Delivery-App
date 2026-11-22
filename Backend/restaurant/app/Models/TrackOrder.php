@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\Order;
+
+class TrackOrder extends Model
+{
+    use HasFactory;
+
+
+    protected $fillable = [
+        'order_placed',
+        'order_confirmed',
+        'order_shipped',
+        'order_delivered'
+    ];
+
+    public function order(){
+        return $this->hasMany(Order::class);
+    }
+}
